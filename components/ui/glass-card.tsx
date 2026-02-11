@@ -21,7 +21,7 @@ export function GlassCard({ children, className, hover = true, ...props }: Glass
         "transition-all duration-300",
         className
       )}
-      {...props}
+      {...(props as any)}
     >
       {children}
     </motion.div>
